@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var massMark = 78;
+        var heightMark = 1.69;
+        var massJohn = 92;
+        var heightJohn = 1.95;
+
+        var massMark2 = 95;
+        var heightMark2 = 1.88;
+        var massJohn2 = 85;
+        var heightJohn2 = 1.76;
+
+        function BMI(mass, height) {
+
+            return (mass / (height * height)).toFixed(1)
+        }
+
+        BMIMark = BMI(massMark, heightMark)
+        BMIJohn = BMI(massJohn, heightJohn)
+
+        console.log(BMIMark);
+        console.log(BMIJohn);
+
+        let markHigherBMI = BMIMark > BMIJohn;
+        console.log(markHigherBMI);
+    </script>
+</body>
+</html>
