@@ -33,7 +33,7 @@ const s2_b = () =>
              
                 <TouchableOpacity style={styles.touchable}>
                     <Image style={{width:'39px',height:'32px'}} 
-                    source={require('../Anh/camera.png')}/>
+                    source={require('../assests/camera.png')}/>
                  <Text style={{ fontSize: "18px", fontWeight: 700 , textAlign: 'center'}}>  Thêm hình ảnh</Text>
                 </TouchableOpacity>
                 
