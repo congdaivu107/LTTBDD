@@ -9,8 +9,8 @@ export default function App() {
   return (
    <NavigationContainer>
     <stack.Navigator mode='modal'>
-      <stack.scr options={ {headerShown:false}} name='Screen1' component={S1}></stack.scr>
-      <stack.scr options={ {headerShown:false}} name='Screen2' component={S2}></stack.scr>
+      <stack.scr options={ {headerShown:false}} name='S1' component={S1}></stack.scr>
+      <stack.scr options={ {headerShown:false}} name='S2' component={S2}></stack.scr>
     </stack.Navigator>
    </NavigationContainer>
   );
