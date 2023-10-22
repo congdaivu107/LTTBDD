@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import FScreen from "./screen/FScreen";
+import S1_a from "./screen/S1_a";
+import S1_b from "./screen/S1_b";
+import S1_c from "./screen/S1_c";
+import S1_d from "./screen/S1_d";
+import S1_e from "./screen/S1_e";
+import S2_a from "./screen/S2_a";
+import SXMEye from "./screen/SXMEye";
 
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <FScreen></FScreen>
+    // <S1_a></S1_a>
+    // <S1_b></S1_b>
+    // <S1_c></S1_c>
+    // <S1_d></S1_d>
+    // <S1_e></S1_e>
+    //S2_a></S2_a>
+    <SXMEye></SXMEye>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
