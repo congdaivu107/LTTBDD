@@ -28,7 +28,7 @@ export default function S1({navigation, route}) {
         </View>
         <View >
             <Pressable style={{flexDirection:'row', width:'350px', height:'37px', borderWidth:1, borderRadius:'8px', marginLeft: 20, marginTop:'10px'}}
-                onPress={()=>navigation.navigate('Screen2')}>
+                onPress={()=>navigation.navigate('S2')}>
                 <Text style={{fontSize: 18, fontWeight:'500', marginLeft:'80px', marginTop:'4.5px'}}>4 MÀU-CHỌN MÀU</Text>
                 <Image source={require('../assets/vector.png')} style={{width: 10, height: 10, marginLeft:'75px', marginTop:'10px'}}></Image>
             </Pressable>          
