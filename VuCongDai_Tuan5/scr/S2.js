@@ -30,7 +30,7 @@ export default function S2({navigation, route}) {
         ></Pressable>
         <Pressable style={{width: 350, height: 45, backgroundColor: 'blue', borderRadius: 5, marginLeft: 20, marginTop: 20}}
         onPress={()=> navigation.navigate(
-          {name:'Screen1', params:{image:image}}
+          {name:'S1', params:{image:image}}
         )}>
           <Text style={{fontSize: 20, fontWeight: '600', color:'white', marginLeft: 150, marginTop: 9.5}}>XONG</Text>
         </Pressable>
