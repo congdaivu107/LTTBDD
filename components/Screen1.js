@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image,Pressable, TextInput } from 'react-native
 import {NavigationAction} from '@react-navigation/native';
 import {creatNativeStackNavigator} from '@react-navigation/native-stack';
 import {StatusBar} from 'expo-status-bar';
+
 export default function Screen1({navigation}){
     return(
         <View style={StyleSheet.container}>
@@ -15,11 +16,11 @@ export default function Screen1({navigation}){
 
                 </TextInput>
             </View>
-            <Pressable onPress={()=>navigation.navigate('Screen2')} 
+            <Pressable onPress={()=>navigation.navigate('Screen2',{id:1})} 
                 style={{width:200, height:45, backgroundColor:'#00BDD6', margin:80, borderRadius: 10, flexDirection:'row'}}
             >
                 <Text style={{fontSize:18, fontWeight:'600', color: 'white', marginTop:10, marginLeft:30}}>GET STARTED</Text>
-                <Image source={require('../assets/muiten.png')} style={{width: 20, height: 15, marginLeft: 14, marginLeft: 10}}></Image>
+                <Image source={require('../assets/muiten.png')} style={{width: 20, height: 15, marginLeft: 14, marginTop: 15}}></Image>
             </Pressable>
         </View>
     );
