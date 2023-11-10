@@ -7,8 +7,9 @@ import {StatusBar} from 'expo-status-bar';
 export default function Screen1({navigation}){
     return(
         <View style={StyleSheet.container}>
-            <Image source={require('../assets/Image 95.png')} style={{width: 250, height: 250}}></Image>
-            <Text style={{fontSize: 20, color: '#8353E2', justifyContent:'center', alignItems:'center', fontWeight: '700'}}>MANAGE YOUR {'\n'}      TASK</Text>
+            <Image source={require('../assets/Image 95.png')} style={{width: 250, height: 250, marginLeft:70}}></Image>
+            <Text style={{fontSize: 20, color: '#8353E2', justifyContent:'center', alignItems:'center',marginLeft:120, fontWeight: '700'}}>MANAGE YOUR {'\n'}        TASK</Text>
+      
 
             <View style={{flexDirection: 'row', width:350, height:50, borderWidth:1, borderRadius:5, margin:10}}>
                 <Image source={require('../assets/email.png')} style={{ width:30, height:30, marginTop: 10, marginLeft: 5}}></Image>
