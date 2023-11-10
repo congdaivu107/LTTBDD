@@ -8,16 +8,16 @@ import { ScrollView } from 'react-native';
 const Screen2=({navigation,route})=>{
     const [users, setUser] = useState({});
     useEffect(()=>{
-        fetch("https://654daceccbc325355741c7cc.mockapi.io/users" + route.params?.id)
+        fetch("https://654daceccbc325355741c7cc.mockapi.io/users/" + route.params?.id)
         .then((response) => response.json())
         .then((json) => setUser(json));
     },[users.todo])
     return(
         <View style={styles.container}>
             <View style={{flexDirection:'row'}}>
-                <Image source={require('../assets/Icon Button 11.png')} style={{width:45, height:45}}></Image>
+                <Image source={require('../assets/Icon Button 11.png')} style={{width:45, height:45,}}></Image>
                 <View style={{flexDirection:'row', marginLeft: 110}}>
-                    <Image source={{uri: users.image}} style={{width:50, height:50, borderRadius: '50%', backgroundColor:"rgba(217, 203, 246, 1"}}></Image>
+                    <Image source={{uri: users.image}} style={{width:50, height:50, borderRadius: '50%', backgroundColor:"rgba(217, 203, 246, 1",}}></Image>
                     <View>
                         <Text style={{fontSize:20, fontWeight: "700"}}>Hi {users.name}</Text>
                         <Text style={{fontSize:16, color:'gray',fontWeight:"600"}}>Have agrate day a head</Text>
@@ -26,7 +26,7 @@ const Screen2=({navigation,route})=>{
             </View>
             <View style={{width:350, height:50,flexDirection:'row',borderWidth:1, borderRadius:5, margin: 20}}>
                 <Image source={require('../assets/search.png')} style={{width:30, height:30, marginLeft:5, margin:10}}></Image>
-                <TextInput placeholder='Rearch' style={{fontSize:16, marginLeft:5, width: 325, height:40, margin:5, borderColor: 'white'}}></TextInput>
+                <TextInput placeholder='Rearch' style={{fontSize:16, marginLeft:5, width: 325, height:40, margin:5, borderColor: 'white',}}></TextInput>
             </View>
             <View style={{margin:10}}>
                 <ScrollView>
@@ -41,7 +41,6 @@ const Screen2=({navigation,route})=>{
                             </View>
                         )}
                         >
-
                         </FlatList>
                     </View>
                 </ScrollView>
