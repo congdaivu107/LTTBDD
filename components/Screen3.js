@@ -12,9 +12,9 @@ const Screen3 = ({navigation, route})=>{
         <View style={styles.container}>
         <View style={{flexDirection:'row', marginTop:-15}}>      
           <View style={{flexDirection:'row',marginLeft: 10}}>
-            <Image source={{uri: user.image}} style={{width: 50,height:50, borderRadius: '50%', backgroundColor: "rgba(217, 203, 246, 1)",}}/>
+            <Image source={{uri: users.image}} style={{width: 50,height:50, borderRadius: '50%', backgroundColor: "rgba(217, 203, 246, 1)",}}/>
             <View>
-                <Text style={{fontSize: 20, fontWeight: "700" }}> Hi {user.name}</Text>        
+                <Text style={{fontSize: 20, fontWeight: "700" }}> Hi {users.name}</Text>        
                 <Text style={{fontSize: 16, color:'gray', fontWeight: "600"}}>Have agrate day a head</Text>
             </View>
           </View>
